@@ -1,14 +1,15 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Peliculas
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let album of Albums" (click)="showAlbum(album)">
+    <img [src]="album.image"/>   
+    <div class="card-title">{{album.name}}</div>
+    <div class="card-subtitle">{{album.rate}}</div>
+  </ion-card>
 </ion-content>
