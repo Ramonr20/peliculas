@@ -22,7 +22,7 @@ export class ShowalbumsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // console.log(navParams);
     this.Albums = this.navParams.get('album');
-    // console.log(this.Albums);
+    console.log(this.Albums);
   }
 
 
