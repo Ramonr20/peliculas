@@ -3,10 +3,12 @@ import { NavController } from 'ionic-angular';
 import { ALBUMS } from '../../data/data.albums';
 import { Album } from '../../interfaces/album.interface';
 import { ShowalbumsPage } from '../showalbums/showalbums';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
 
   Albums:Album[] = [];
