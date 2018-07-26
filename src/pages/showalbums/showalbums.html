@@ -1,18 +1,13 @@
-<!--
-  Generated template for the ShowalbumsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>{{Albums.name}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+  
+  <img [src]="Albums.image">
+  <p>{{Albums.rate}}</p>
 
 </ion-content>
